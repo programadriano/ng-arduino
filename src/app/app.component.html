@@ -1,8 +1,16 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1>
-    Welcome to {{ title }}!
+    {{statusLed}}
   </h1>
-  <button (click)="mamangerLed()">{{statusLed}}</button>
+  <!-- <button (click)="mamangerLed()">{{statusLed}}</button> -->
+
+
+    <input type="checkbox" name="switch" id="switch">
+    <label class="switch" for="switch" (click)="mamangerLed()">
+    </label>
+
+
+
 </div>
 <router-outlet></router-outlet>
