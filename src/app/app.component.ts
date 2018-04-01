@@ -9,7 +9,7 @@ import { LedsService } from './services/leds.service';
 export class AppComponent {
   title = 'app';
   led: String = 'off';
-  statusLed: String = 'DESLIGADO';
+  statusLed: String = 'LIGAR';
   turn: Boolean = false;
   constructor(private ledsService: LedsService) { }
 
@@ -18,7 +18,7 @@ export class AppComponent {
     this.turn = !this.turn;
 
     this.led = this.turn ? 'on' : 'off';
-    this.statusLed = this.turn ? 'DESLIGADO' : 'LIGADO';
+    this.statusLed = this.turn ? 'DESLIGAR' : 'LIGAR';
      this.ledsService.get(this.led).subscribe((result) => {
 
      });
