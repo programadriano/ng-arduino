@@ -19,8 +19,8 @@ export class AppComponent {
 
     this.led = this.turn ? 'on' : 'off';
     this.statusLed = this.turn ? 'DESLIGADO' : 'LIGADO';
-    // this.ledsService.get(this.led).subscribe((result) => {
+     this.ledsService.get(this.led).subscribe((result) => {
 
-    // });
+     });
   }
 }
